@@ -1,0 +1,69 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="{% static 'style/style.css' %}" />
+  </head>
+  <body>
+    <nav>
+      <div class="fixed">
+        <div class="logo">
+          <a href="#"><h1>Task Tracker</h1></a>
+        </div>
+        <div class="user">
+          <button>
+            <div class="name">
+              <h3 class="first-name">Nathan</h3>
+              <h3 class="second-name">Birindwa</h3>
+            </div>
+            <div class="email"><p>birhindwan@gmail.com</p></div>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="add_input">
+          <h1>ADD TASK</h1>
+          <p>
+            You can only add the name of the task from here but you can still
+            edit it later
+          </p>
+          <div class="add-to-list">
+            <input type="text" placeholder=" Quick Add" />
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="each-card">
+            <div class="task-name">
+              <h2>1</h2>
+              <h2>Learn Css Framework</h2>
+            </div>
+          </div>
+          <div class="each-card">
+            <div class="task-name">
+              <h2>1</h2>
+              <h2>Learn Css Framework</h2>
+            </div>
+          </div>
+          <div class="each-card">
+            <div class="task-name">
+              <h2>1</h2>
+              <h2>Learn Css Framework</h2>
+            </div>
+          </div>
+          <div class="each-card">
+            <div class="task-name">
+              <h2>1</h2>
+              <h2>Learn Css Framework</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
