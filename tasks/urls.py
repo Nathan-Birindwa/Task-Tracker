@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    # path("<str:task_id>", )
+    path("add", views.add, name="add"),
 ]
 

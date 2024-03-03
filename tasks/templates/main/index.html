@@ -1,4 +1,4 @@
-{% load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,32 +36,29 @@
             <input type="text" placeholder=" Quick Add" />
             <button type="submit">Submit</button>
           </div>
+          <div class="add-more">
+            <p>
+              Do you wanna add with full functionality
+              <a href="{% url 'add' %}">Add</a>
+            </p>
+          </div>
         </div>
         <div class="cards">
+          {% for items in List %}
           <div class="each-card">
             <div class="task-name">
-              <h2>1</h2>
-              <h2>Learn Css Framework</h2>
+              <div class="id-number">
+                <h2>{{items.id}}</h2>
+              </div>
+              <h2>{{items.name}}</h2>
+            </div>
+            <p>{{items.dec}}</p>
+            <div class="submit-btn">
+              <button>Manage</button>
             </div>
           </div>
-          <div class="each-card">
-            <div class="task-name">
-              <h2>1</h2>
-              <h2>Learn Css Framework</h2>
-            </div>
-          </div>
-          <div class="each-card">
-            <div class="task-name">
-              <h2>1</h2>
-              <h2>Learn Css Framework</h2>
-            </div>
-          </div>
-          <div class="each-card">
-            <div class="task-name">
-              <h2>1</h2>
-              <h2>Learn Css Framework</h2>
-            </div>
-          </div>
+
+          {% endfor %}
         </div>
       </div>
     </main>

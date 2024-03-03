@@ -130,20 +130,44 @@ main {
 }
 .cards {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+
   flex-wrap: wrap;
   flex-grow: auto;
   margin: 4rem auto;
+  background: transparent;
+}
+.cards a {
+  display: flex;
+  text-decoration: none;
+  background: transparent;
+  border: none;
 }
 
 .each-card {
-  border-top: 4px solid;
+  overflow: hidden;
   margin: 10px;
   width: 26rem;
   background: var(--plain-white-color);
   height: 18rem;
   box-shadow: 2px 2px 2px 1.4px rgba(114, 118, 118, 0.346);
-  border-radius: 14px;
+  border-radius: 0 0 14px 14px;
+  padding: 1rem;
+}
+
+/* Border gradient */
+.each-card {
+  border-top: 4px solid;
+  border-image: linear-gradient(
+    to right,
+    #0e1a3a,
+    var(--grey-white-color),
+    #ffdb8e,
+    #1c0054
+  );
+  border-image-slice: 1;
+  cursor: pointer;
+  text-align: center;
 }
 @media (max-width: 915px) {
   .cards {
@@ -156,4 +180,50 @@ main {
     background: var(--plain-white-color);
     height: 20rem;
   }
+}
+.task-name {
+  display: flex;
+  justify-content: space-between;
+}
+.task-name {
+  color: var(--blue-color);
+}
+.task-name h2:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background: var(--dark-blue);
+  color: white;
+}
+.each-card p {
+  text-align: start;
+  margin: 7px;
+  margin-top: 20px;
+  color: var(--grey-white-color);
+}
+.submit-btn button {
+  height: 3rem;
+  transition: 0.3s;
+  width: 11rem;
+  color: var(--background);
+  font-weight: var(--font-weight);
+  font-size: 1.3rem;
+  border: none;
+  margin-right: 0px;
+  cursor: pointer;
+  background: var(--dark-blue);
+  border-radius: 13px;
+  margin-top: 1.4rem;
+}
+.add_input button:hover,
+.add_input button:focus {
+  background: var(--blue-color);
+}
+.add-more p {
+  color: var(--grey-white-color);
+}
+.add-more a {
+  text-decoration: none;
+  color: blue;
 }
