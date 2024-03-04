@@ -1,9 +1,5 @@
 from django.shortcuts import render
-from .models import Task
 from django import forms
-
-class add_Item_Form(forms.Form):
-    task = forms.CharField(label="Add Task", max_length=100)
 
 List = [{
     "id": 1,
@@ -31,3 +27,9 @@ def index(request):
     })
 def add(request):
     return render(request, 'Task/add.html')
+
+def sign_up(request):
+    return render(request, "Auth/Sign_up.html")
+
+def Login(request):
+    return render(request, "Auth/Login.html")

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentification</title>
+    <link rel="stylesheet" href="{% static 'auth/style.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container">
+        <div class="logo">
+          <h1>Create Account</h1>
+          <p>Please fill out the form to create an account</p>
+        </div>
+        <form method="">
+          <div class="input">
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="input">
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="input">
+            <input type="password" placeholder="Comfirm Password" />
+          </div>
+          <div class="button">
+            <p>
+              Already have an Account<a href="{% url 'Login' %}">Click here</a>
+            </p>
+            <button>Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

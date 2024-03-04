@@ -1,14 +1,14 @@
 1 .Frontend
 
-Authentification Page
+<!-- Authentification Page -->
 
-.Login Page
+<!-- .Login Page -->
 
-.Sign up page
+<!-- .Sign up page -->
 
 .Forgot Password Page
 
-.Main Page
+<!-- .Main Page -->
 
 <!-- .navbar -->
 
@@ -18,7 +18,7 @@ Authentification Page
 
 .Add To List Page
 
-.Name_of-list
+.Name_of_list
 
 .description
 

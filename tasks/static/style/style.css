@@ -130,8 +130,7 @@ main {
 }
 .cards {
   display: flex;
-  /* justify-content: center; */
-
+  justify-content: center;
   flex-wrap: wrap;
   flex-grow: auto;
   margin: 4rem auto;
@@ -158,13 +157,7 @@ main {
 /* Border gradient */
 .each-card {
   border-top: 4px solid;
-  border-image: linear-gradient(
-    to right,
-    #0e1a3a,
-    var(--grey-white-color),
-    #ffdb8e,
-    #1c0054
-  );
+  border-image: linear-gradient(to right, #0044ff, #c300ff, #6a00ff, #070014);
   border-image-slice: 1;
   cursor: pointer;
   text-align: center;
@@ -216,8 +209,8 @@ main {
   border-radius: 13px;
   margin-top: 1.4rem;
 }
-.add_input button:hover,
-.add_input button:focus {
+.submit-btn button:hover,
+.submit-btn button:focus {
   background: var(--blue-color);
 }
 .add-more p {
